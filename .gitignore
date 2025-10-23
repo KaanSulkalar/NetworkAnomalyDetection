@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Data & model artifacts
+data/*.csv
+data/*.pcap
+*.joblib
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
