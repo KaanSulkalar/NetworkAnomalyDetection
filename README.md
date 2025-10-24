@@ -14,50 +14,39 @@ This project aims to detect anomalies in network traffic using Machine Learning 
 
 ---
 
-### Run Instructions
+## Run Instructions
 
 ### 1. Environment Setup
 ```bash
 git clone https://github.com/KaanSulkalar/NetworkAnomalyDetection.git
 cd NetworkAnomalyDetection
 pip install -r requirements.txt
-
-### 2. Run Jupyter Notebooks
-```bash
+2. Run Jupyter Notebooks
 cd notebooks
 jupyter notebook
-
-### 3. Launch Streamlit Dashboard
-```bash
+3. Launch Streamlit Dashboard
 cd dashboard
 streamlit run app.py
 The app will open in your browser at:
 http://localhost:8502
-
-
-
-
 Project Pipeline
-Data Preprocessing
+1. Data Preprocessing
 Load and clean the UNSW-NB15 dataset
 Encode categorical features
 Normalize numeric features
 Split data into training and testing sets
-Model Training
+2. Model Training
 Train supervised and unsupervised models
 Random Forest for classification
 Isolation Forest for anomaly detection
-Evaluation Metrics
+3. Evaluation Metrics
 Accuracy, Precision, Recall, and F1-Score
 ROC-AUC and PR Curves
 Confusion Matrix and Feature Importance
-Dashboard Visualization
+4. Dashboard Visualization
 Upload CSV data and perform predictions
 Interactive performance charts and anomaly distribution
 Display model results and downloadable outputs
-
-
-
 Directory Structure
 NetworkAnomalyDetection/
 │
@@ -82,20 +71,13 @@ NetworkAnomalyDetection/
 │   └── metrics.xlsx
 │
 └── requirements.txt
-
-
 Deployed Version
 Live app (Streamlit Community Cloud):
 https://kaansulkalar-networkanomalydetection.streamlit.app
-
-
 Future Enhancements
 Deep learning (Autoencoder) anomaly detection module
 Real-time PCAP traffic capture and scoring
 Dockerized cloud deployment
 Integration with Azure Monitor or ELK Stack for SIEM analysis
-
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/KaanSulkalar/NetworkAnomalyDetection/main/assets/dashboard_preview.png" alt="Dashboard Preview" width="80%">
-</p>
+Dashboard Preview
+<p align="center"> <img src="https://raw.githubusercontent.com/KaanSulkalar/NetworkAnomalyDetection/main/assets/dashboard_preview.png" alt="Dashboard Preview" width="80%"> </p> ```
